@@ -1,3 +1,4 @@
+#feito em python
 # N é o número de entrada que será analisado pelo códico como sendo ou não pertencente a sequência de fibonacci
 N = int(input())
 
