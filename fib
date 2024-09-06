@@ -1,0 +1,18 @@
+# N é o número de entrada que será analisado pelo códico como sendo ou não pertencente a sequência de fibonacci
+N = int(input())
+
+def fibonacci(n):
+    if  n < 0:
+        return "não pertence a sequencia de fibonacci"
+    if n == 0 or n == 1:
+        return "pertence a sequencia de fibonacci"
+    val0, val1 = 0, 1 #numeros iniciais da seqência
+    while True:
+        valf = val1 + val0
+        if n == valf:
+            return "pertence a sequencia de fibonacci"
+        if n < valf:
+            return "não pertence a sequencia de fibonacci"
+        val0 = val1
+        val1 = valf
+print(fibonacci(N))
