@@ -1,0 +1,6 @@
+string = input()
+a_ocurrences = string.count("a"))
+if a_ocurrences == 0:
+    print("a letra A não está presente na string")
+else
+    print(f'a letra A aparece {a_ocurrences} vezes na strig')
